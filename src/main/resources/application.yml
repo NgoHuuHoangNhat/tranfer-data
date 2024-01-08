@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    postgres:
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: Zaq12wsxcde3
+      driver-class-name: org.postgresql.Driver
+    oracle:
+      url: jdbc:oracle:thin:@//localhost:1521/orcl
+      username: system
+      password: 123456
+      driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      format_sql: true
+    generate-ddl: true
+#  flyway:
+#    enabled: true
+#    locations: classpath:db/migration/{vendor}
+#    installed-by: nhat
+
+
+
+
